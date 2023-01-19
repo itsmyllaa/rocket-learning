@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //### Transformar notas escolares ###
+        //Crie um algoritmo que transforme as notas escolares do sistema númerico para sistema de notas 
+        //Em caracteres tipo A B C
+        /*
+         * De 90 para cima  - A
+         * entre 80 - 89    - B
+         * entre 70 - 79    - C
+         * entre 60 - 69    - D
+         * menor que 60     - F
+         */
+        let score = 100 //Mude meu valor para alterar os resultados
+        function getScore(score){
+        let scoreA = score >= 90 && score <= 100
+        let scoreB = score >= 80 && score <= 89
+        let scoreC = score >= 70 && score <= 79
+        let scoreD = score >= 60 && score <= 69
+        let scoreF = score >= 60 && score >= 0
+
+        let scoreFinal;
+
+        if(scoreFinal){
+            scoreFinal = "A"
+        } else if (scoreB) {
+            scoreFinal = "B"
+        } else if (scoreC) {
+            scoreFinal = "C"
+        } else if (scoreD) {
+            scoreFinal = "D"
+        } else if (scoreF) {
+            scoreFinal = "F"
+        } else {
+            scoreFinal = "Nota inválida"
+        }
+        return scoreFinal
+        }
+    
+    console.log(getScore(0))
+    console.log(getScore(1))
+    console.log(getScore(-1))
+    console.log(getScore(10))
+    console.log(getScore(45))
+    console.log(getScore(60))
+    console.log(getScore(61))
+    console.log(getScore(75))
+    console.log(getScore(95))
+    console.log(getScore(85))
+    console.log(getScore(101))
+    console.log(getScore(100))
+
+    </script>
+</body>
+</html>

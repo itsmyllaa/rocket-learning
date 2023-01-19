@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //Estrutura de repeticao while
+    //While
+    let i = 0;
+    while(i < 10) {
+        console.log(i)
+        i++;
+    }
+    //For Of
+    let name = 'Mayk'
+    let names = ['Pedro','Paulo','Pablo']
+    for(let name of names){
+        console.log(name )
+    }
+    //For In
+    let person = {
+        names: 'John',
+        age: 30,
+        weight: 88.6
+    }
+    for(let property in person){
+        console.log(property)
+        console.log(person["name"])
+        console.log(person[property])
+    }
+    </script>
+</body>
+</html>

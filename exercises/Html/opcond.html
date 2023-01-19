@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Operador condicional (ternário)
+        //Dependendo da condicao, nos recebemos valores diferentes
+        // condicao valor 1 se nao valor 2 
+        // condition ? value1 : value 2
+        // Exemplos:
+        // Café da manhã TOP
+        // AND &&
+        let pao = true
+        let queijo = true
+        const niceBreakfast = pao && queijo ? 'Café TOP' : 'Café RUIM'
+        console.log(niceBreakfast)
+        pao = false
+        queijo = true
+        niceBreakfast = pao && queijo ? 'Café TOP' : 'Café RUIM'
+        console.log(niceBreakfast)
+        // OR ||
+        pao = false
+        queijo = true
+        niceBreakfast = pao || queijo ? 'Café TOP' : 'Café RUIM'
+        console.log(niceBreakfast)
+        pao = false
+        queijo = false
+        niceBreakfast = pao || queijo ? 'Café TOP' : 'Café RUIM'
+        console.log(niceBreakfast)
+        pao = true
+        queijo = true
+        niceBreakfast = pao || queijo ? 'Café TOP' : 'Café RUIM'
+        console.log(niceBreakfast)
+        //Maior de 18
+        let age = 18
+        const canDrive = age >= 18 ? "Can drive" : "Can't drive"
+        console.log(canDrive)
+        age = 10
+        canDrive = age >= 18 ? "Can drive" : "Can't drive"
+        console.log(canDrive)
+        age = 30
+        canDrive = age >= 18 ? "Can drive" : "Can't drive"
+        console.log(canDrive)
+    </script>
+</body>
+</html>

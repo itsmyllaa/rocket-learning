@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Switch
+        let expression = a //mude-a de a, b ou default para exibir no console
+        switch(expression){
+            case 'a':
+                //código
+                console.log('a')
+                break
+            case 'b':
+                //código para expression b
+                console.log('b')
+                break
+            default:
+                console.log('default')
+                break
+        }
+        //Exemplo de calculadora
+        function calculate(number1, operator, number2){
+            let result
+
+            switch(operator){
+                case '+':
+                    result = number1 + number2
+                    break
+                case '-':
+                    result = number1 - number2
+                    break
+                case '*':
+                    result = number1 * number2
+                    break
+                case '/':
+                    result = number1 / number2
+                    break
+                default:
+                    console.log('não implementado')
+                    break
+            }
+        }
+        console.log(calculate(4, '+', 8))
+        console.log(calculate(4, '-', 8))
+        console.log(calculate(4, '*', 8))
+        console.log(calculate(4, '/', 8))
+        console.log(calculate(4, '%', 8))
+    </script>
+</body>
+</html>
